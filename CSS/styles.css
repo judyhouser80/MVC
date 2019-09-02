@@ -109,6 +109,12 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.u-margin-bottom-huge {
+  margin-bottom: 8rem; }
+
+.u-margin-top-big {
+  margin-bottom: 8rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -135,6 +141,12 @@ body {
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
+
+.btn--blue {
+  background-color: #2836b4;
+  color: #fffafa; }
+  .btn--blue::after {
+    background-color: #2836b4; }
 
 .btn::after {
   content: "";
@@ -195,7 +207,7 @@ body {
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #03cc03, #059405); }
+        background-image: linear-gradient(to right bottom, #f7e8f7, #f709f7); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #6fb0d5, #4850cc); }
   .card:hover .card__side--front {
@@ -211,7 +223,7 @@ body {
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/waterfall.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #03cc03, #059405), url(../img/autumn.jpg); }
+      background-image: linear-gradient(to right bottom, #f7e8f7, #f709f7), url(../img/autumn.jpg); }
     .card__picture--3 {
       background-image: linear-gradient(to right bottom, #6fb0d5, #4850cc), url(../img/boat.jpg); }
   .card__heading {
@@ -231,7 +243,7 @@ body {
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(3, 204, 3, 0.85), rgba(5, 148, 5, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(247, 232, 247, 0.85), rgba(247, 9, 247, 0.85)); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(111, 176, 213, 0.85), rgba(72, 80, 204, 0.85)); }
   .card__details {
@@ -373,5 +385,5 @@ body {
 
 .section-good {
   background-color: #f7e8f7;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -11rem; }
