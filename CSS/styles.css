@@ -205,11 +205,14 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+        color: #fffafa; }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #f7e8f7, #f709f7); }
+        background-image: linear-gradient(to right bottom, #f7e8f7, #f709f7);
+        color: #fffafa; }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #6fb0d5, #4850cc); }
+        background-image: linear-gradient(to right bottom, #6fb0d5, #4850cc);
+        color: #fffafa; }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -219,7 +222,9 @@ body {
     height: 23rem;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/waterfall.jpg); }
     .card__picture--2 {
@@ -267,7 +272,7 @@ body {
     width: 90%; }
   .card__goodness-box {
     text-align: center;
-    color: 4color-white;
+    color: #fff;
     margin-bottom: 8rem; }
   .card__price-only {
     font-size: 1.4rem;
@@ -368,6 +373,18 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.section-events {
+  padding: 15rem 0;
+  background-color: #f7e8f7; }
+
+.event {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 6rem; }
 
 .section-about {
   background-color: #f7e8f7;
