@@ -30,20 +30,21 @@
                 background-image: linear-gradient(to right bottom,
                         $color-yellow-light,
                         $color-yellow-dark);
-
+                color: $color-snow;
             }
 
             &-2 {
                 background-image: linear-gradient(to right bottom,
-                        $color-green-light,
-                        $color-green-dark);
-
+                        $color-purple-light,
+                        $color-purple-dark);
+                color: $color-snow;
             }
 
             &-3 {
                 background-image: linear-gradient(to right bottom,
                         $color-primary-light,
                         $color-primary-dark);
+                color: $color-snow;
 
             }
         }
@@ -64,6 +65,8 @@
         background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
 
         &--1 {
             background-image: linear-gradient(to right bottom,
@@ -74,8 +77,8 @@
 
         &--2 {
             background-image: linear-gradient(to right bottom,
-                    $color-green-light,
-                    $color-green-dark),
+                    $color-purple-light,
+                    $color-purple-dark),
                 url(../img/autumn.jpg);
         }
 
@@ -112,14 +115,15 @@
 
         &--2 {
             background-image: linear-gradient(to right bottom,
-                    rgba($color-green-light, .85),
-                    rgba($color-green-dark, .85));
+                    rgba($color-purple-light, .85),
+                    rgba($color-purple-dark, .85));
         }
 
         &--3 {
             background-image: linear-gradient(to right bottom,
                     rgba($color-primary-light, .85),
                     rgba($color-primary-dark, .85));
+
         }
     }
 
@@ -158,7 +162,7 @@
 
     &__goodness-box {
         text-align: center;
-        color: 4color-white;
+        color: $color-white;
         margin-bottom: 8rem;
     }
 
