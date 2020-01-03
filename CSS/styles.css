@@ -197,6 +197,9 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.btn-text home_btn {
+  text-align: center; }
+
 .card {
   height: 52rem;
   perspective: 150rem;
