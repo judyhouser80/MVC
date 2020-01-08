@@ -372,7 +372,7 @@ body {
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
-    transition: all .4s .2s; }
+    transition: all .8s .2s; }
   .popup_left {
     width: 33.333333%;
     display: table-cell; }
