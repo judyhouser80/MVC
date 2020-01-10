@@ -436,6 +436,9 @@ body {
   padding: 5rem 0;
   background-color: #4850cc;
   font-size: 1.4rem; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 3rem 0; } }
   .footer_logo-box {
     text-align: center;
     margin-bottom: 8rem; }
@@ -445,6 +448,11 @@ body {
   .footer_navigation {
     padding-left: 15rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer_navigation {
+        width: 100%;
+        padding-left: 2rem;
+        text-align: center; } }
   .footer_list {
     list-style: none; }
   .footer_item {
@@ -466,6 +474,11 @@ body {
     color: #f7f7f7;
     width: 80%;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer_copyright {
+        width: 100%;
+        float: none;
+        text-align: center; } }
 
 .row {
   max-width: 114rem;
@@ -478,7 +491,8 @@ body {
         margin-bottom: 6rem; } }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 50rem; } }
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -515,6 +529,10 @@ body {
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  @media (max-width: 37.5em) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -543,6 +561,14 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
+  @media (max-width: 56.25em) {
+    .navigation_button {
+      top: 4rem;
+      right: 4rem; } }
+  @media (max-width: 37.5em) {
+    .navigation_button {
+      top: 3.5rem;
+      right: 3.5rem; } }
 
 .navigation_background {
   height: 6rem;
@@ -554,6 +580,14 @@ body {
   background-image: radial-gradient(#6fb0d5, #4850cc);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  @media (max-width: 56.25em) {
+    .navigation_background {
+      top: 4.1rem;
+      right: 4.1rem; } }
+  @media (max-width: 37.5em) {
+    .navigation_background {
+      top: 3.1rem;
+      right: 3.1rem; } }
 
 .navigation_nav {
   height: 100vh;
