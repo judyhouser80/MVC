@@ -247,7 +247,6 @@ body {
   text-align: center; }
 
 .card {
-  height: 52rem;
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
@@ -343,6 +342,35 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+  @media (max-width: 56.25em) {
+    .card {
+      height: auto;
+      border-radius: 3px;
+      background-color: #fff;
+      box-shadow: 0 1.5rem 0.4rem rgba(0, 0, 0, 0.15); }
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        .card__side--back {
+          transform: rotateY(0);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card__details {
+        padding: 1rem 3rem; }
+      .card__cta {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        transform: translate(0);
+        width: 100%;
+        padding: 7rem 4rem 4rem 4rem; }
+      .card__goodness-box {
+        margin-bottom: 3rem; }
+      .card__price-value {
+        font-size: 4rem; } }
 
 .composition {
   position: relative; }
@@ -445,17 +473,36 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
     transition: all .8s .2s; }
+    @media (max-width: 37.5em) {
+      .popup_content {
+        width: 100%; } }
   .popup_left {
     width: 33.333333%;
     display: table-cell; }
+    @media (max-width: 56.25em) {
+      .popup_left {
+        display: table-row;
+        width: 50%; } }
   .popup_right {
     width: 66.666667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 56.25em) {
+      .popup_right {
+        width: 50%;
+        padding: 3rem; } }
   .popup_img {
     display: block;
     width: 100%; }
+    @media (max-width: 56.25em) {
+      .popup_img:first-child {
+        float: left;
+        width: 51%; } }
+    @media (max-width: 56.25em) {
+      .popup_img:last-child {
+        float: right;
+        width: 49%; } }
   .popup_text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -716,6 +763,14 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
+  @media (max-width: 56.25em) {
+    .event {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem; } }
+  @media (max-width: 37.5em) {
+    .event {
+      transform: skewX(0); } }
   .event_shape {
     width: 15rem;
     height: 15rem;
@@ -727,12 +782,18 @@ body {
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
     position: relative; }
+    @media (max-width: 37.5em) {
+      .event_shape {
+        transform: translateX(-3rem) skewX(0); } }
   .event_img {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
     transition: all .5s; }
   .event_text {
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .event_text {
+        transform: skewX(0); } }
   .event_caption {
     position: absolute;
     top: 50%;

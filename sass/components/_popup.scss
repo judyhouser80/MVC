@@ -33,11 +33,21 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(.5);
         transition: all .8s .2s;
+
+        @include respond(phone) {
+            width: 100%;
+        }
+
     }
 
     &_left {
         width: 33.333333%;
         display: table-cell;
+
+        @include respond(tab-port) {
+            display: table-row;
+            width: 50%;
+        }
     }
 
     &_right {
@@ -45,11 +55,31 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+
+        @include respond(tab-port) {
+            width: 50%;
+            padding: 3rem;
+
+        }
     }
 
     &_img {
         display: block;
         width: 100%;
+
+        &:first-child {
+            @include respond(tab-port) {
+                float: left;
+                width: 51%;
+            }
+        }
+        &:last-child {
+            @include respond(tab-port) {
+                float: right;
+                width: 49%;
+            }
+        }
+
     }
 
     &_text {
