@@ -399,6 +399,9 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .3s; }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      padding: 2rem; } }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
@@ -406,8 +409,11 @@ body {
     background-image: linear-gradient(to right, #6fb0d5, #4850cc);
     -webkit-background-clip: text;
     color: transparent; }
-  .feature-box:hover {
-    transform: translateY(-2rem) scale(1.05); }
+    @media (max-width: 56.25em) {
+      .feature-box__icon {
+        margin-bottom: 0; } }
+    .feature-box__icon:hover {
+      transform: translateY(-2rem) scale(1.05); }
 
 .popup {
   height: 100vh;
@@ -592,12 +598,12 @@ body {
   cursor: pointer; }
   @media (max-width: 56.25em) {
     .navigation_button {
-      top: 4rem;
-      right: 4rem; } }
+      top: 4.5rem;
+      right: 4.5rem; } }
   @media (max-width: 37.5em) {
     .navigation_button {
-      top: 3.5rem;
-      right: 3.5rem; } }
+      top: 3rem;
+      right: 3rem; } }
 
 .navigation_background {
   height: 6rem;
@@ -611,12 +617,12 @@ body {
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   @media (max-width: 56.25em) {
     .navigation_background {
-      top: 4.1rem;
-      right: 4.1rem; } }
+      top: 4.5rem;
+      right: 4.5rem; } }
   @media (max-width: 37.5em) {
     .navigation_background {
-      top: 3.1rem;
-      right: 3.1rem; } }
+      top: 3.3rem;
+      right: 3.3rem; } }
 
 .navigation_nav {
   height: 100vh;
@@ -764,7 +770,7 @@ body {
     transform: skewY(7deg); }
   @media (max-width: 56.25em) {
     .section-features {
-      padding: 15rem 0; } }
+      padding: 10rem 0; } }
 
 .section-good {
   background-color: #f7e8f7;
