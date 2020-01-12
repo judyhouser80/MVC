@@ -20,7 +20,7 @@
         <input type="checkbox" class="navigation_checkbox" id="navi-toggle">
 
         <label for="navi-toggle" class="navigation_button">
-            <span class="navigation_icon">&nbsp;</span>>
+            <span class="navigation_icon">&nbsp;</span>
         </label>
 
         <div class="navigation_background">&nbsp;</div>
@@ -89,10 +89,24 @@
 
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/church_outside1.jpg" alt="Photo 1"
+
+                        <img srcset="img/church_outside1-small.jpg 300w, img/church_outside1.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 2"
+                            class="composition__photo composition__photo--p1" src="img/church-outside1.jpg">
+
+                        <img srcset="img/coffee-small.jpg 300w, img/coffee.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 1"
+                            class="composition__photo composition__photo--p2" src="img/coffee.jpg">
+
+                        <img srcset="img/inside_o-small.jpg 300w, img/inside_o.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 3"
+                            class="composition__photo composition__photo--p3" src="img/inside_o.jpg">
+
+
+                        <!-- <img src="img/church_outside1.jpg" alt="Photo 1"
                             class="composition__photo composition__photo--p1">
                         <img src="img/coffee.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                        <img src="img/inside_o.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                        <img src="img/inside_o.jpg" alt="Photo 3" class="composition__photo composition__photo--p3"> -->
                     </div>
                 </div>
             </div>
@@ -277,6 +291,7 @@
         <div class="footer_logo-box">
             <img src="img/Inverted MediumSquareLogo.png" alt="MVC Logo" class="footer_logo">
         </div>
+
         <div class="row">
             <div class="col-1-of-2">
                 <div class="footer_navigation">
